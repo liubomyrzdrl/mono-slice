@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.6.2"
+  },
+  "scripts": {
+    "start": "lerna run start --scope prod-toolkit",
+    "start:dev": "lerna run dev --scope product-ui",
+    "test": "lerna run test",
+    "new-version": "lerna version convensional-commits --yes",
+    "diff": "lerna diff"
+  },
+  "version": "1.0.0",
+  "npmClient": "yarn",
+  "useWorkspaces": true
+}
